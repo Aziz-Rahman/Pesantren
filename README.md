@@ -2,7 +2,7 @@
 
 Pesantren adalah sebuah pendidikan tradisional yang para siswanya tinggal bersama dan belajar di bawah bimbingan guru yang lebih dikenal dengan sebutan kiai dan mempunyai asrama untuk tempat menginap santri. Santri tersebut berada dalam kompleks yang juga menyediakan masjid untuk beribadah, ruang untuk belajar, dan kegiatan keagamaan lainnya.
 
-Tujuan sstem ini dibuat adalah untuk mempermudah masyarakat agal lebih mengenal pesantren ini, dan sebagai media informasi positif. Selain itu juga pada sistem ini akan dikembamgkan untuk melakukan pendaftaran online supaya mempermudah dalam proses pendataan santri secara sistematis
+Tujuan sistem ini dibuat adalah untuk mempermudah masyarakat agal lebih mengenal pesantren ini, dan sebagai media informasi positif. Selain itu juga pada sistem ini akan dikembamgkan untuk melakukan pendaftaran online supaya mempermudah dalam proses pendataan santri secara sistematis
 
 # Fitur
 - Article
@@ -11,3 +11,9 @@ Tujuan sstem ini dibuat adalah untuk mempermudah masyarakat agal lebih mengenal 
 - PSB/Pendaftaran Santri Baru (On progress)
 - Ruang Santri ->yaitu sebagai wadah informasi yg disediakan khusus untuk para santri (On progress)
 
+# Halaman Homepage
+![alt text](https://github.com/Aziz-Rahman/pesantren/blob/master/Pesantren%20Nur%20Al-Tauhid11.png)
+
+
+# Artikel
+![alt text](https://github.com/Aziz-Rahman/pesantren/blob/master/Pesantren%20Nur%20Al-Tauhid.png)
