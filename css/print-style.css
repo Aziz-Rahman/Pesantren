@@ -1,0 +1,93 @@
+#main-wrapper {
+	padding-top: 50px;
+}
+
+#main-wrapper .inner-wrapper {
+	border: 1px solid #ccc;
+	padding: 30px;
+}
+
+.inner-wrapper .photo img {
+	width: 100px;
+	height: auto;
+}
+
+.top-area {
+	border-top: 0 !important;
+	vertical-align: middle !important;
+}
+
+.inner-wrapper .pesantren-title,
+.info-title {
+	margin: 0;
+}
+
+.inner-wrapper .pesantren-title {
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.info-title {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/*******************************/
+/*             Button          */
+/*******************************/
+
+.btn {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 4px solid #CCCCCC;
+    margin:0;
+    -webkit-box-shadow: 0 5px 5px -6px rgba(0,0,0,.3);
+       -moz-box-shadow: 0 5px 5px -6px rgba(0,0,0,.3);
+            box-shadow: 0 5px 5px -6px rgba(0,0,0,.3);
+}
+
+.btn-danger {
+    background-color: #d73814;
+    border-color: #B62323;
+    text-shadow: 1px 1px 0 #ac2925;
+    border-radius: 2px;
+}
+
+.btn-danger:hover, .btn-danger:focus {
+    background-color: #cd3714;
+    border-color: #A91717;
+    outline: none !important;
+}
+
+.btn-pressure {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.btn-pressure:focus {
+    -moz-outline-style:none;
+         outline:medium none;
+}
+
+.btn-pressure:active, .btn-pressure.active {
+    top: 4px;
+    border: 0;
+    position: relative;
+}
+
+.btn-sensitive:active, .btn-sensitive.active {
+    top: 1px;
+    margin-top: 4px;
+}
+
+
+@media print {
+	.noPrint { 
+		display: none;
+	}
+}
