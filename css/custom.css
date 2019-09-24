@@ -26,6 +26,7 @@ a:focus {
 }
 
 a:hover {
+	cursor:pointer !important;
 	text-decoration: none;
 	color: #54FF00;
 	transition: all ease 0.3s;
@@ -143,7 +144,7 @@ p {
 }
 
 .navbar-header .navbar-brand {
-    font-size: 14px;
+    font-size: 25px;
     color: #fff;
     margin-top: 10px;
 }
@@ -1140,10 +1141,6 @@ h1.post-title {
 	padding: 20px;
 }
 
-.info-psb {
-	margin-top: 30px;
-}
-
 .login-info .login-title,
 .login-santri .login-title,
 .register-santri .register-title {
@@ -1193,7 +1190,7 @@ img.pull-left {
 /* SCROLL LOADER */
 .ias_loader, .ias_trigger {
 	text-align:center;
-	margin: 100px 0 40px;
+	margin: 60px 0 0;
     float: left;
     width: 100%;
 }

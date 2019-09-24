@@ -20,7 +20,7 @@
 		<div class="container">
 			<!-- Article main content -->
 			<div class="row">
-				<article class="col-sm-12 col-md-6 col-sm-offset-0 col-md-offset-3 maincontent-detail">
+				<article class="col-sm-12 col-md-8 col-sm-offset-0 col-md-offset-2 maincontent-detail">
 					<header class="detail-title">
 						<?php echo '<h1 class="post-title">'.$data['judul'].'</h1>'; ?>
 						<div class="meta-post meta-detail">
@@ -38,7 +38,7 @@
 
 					<!-- Facebook comments -->
 					<!-- <div class="fb-comments" data-href="https://www.facebook.com/Tutorial-1417922951780882/?ref=hl" data-width="555" data-numposts="5"></div> -->
-					<div class="fb-comments" colorscheme="dark" data-href="http://beta.aziz-rahman.com/pesantren/?page=detail-article&id_artikel=<?php echo $data['id_artikel']; ?>" data-width="555" data-numposts="5"></div>
+					<div class="fb-comments" colorscheme="dark" data-href="http://beta.aziz-rahman.com/pesantren/?page=detail-article&id_artikel=<?php echo $data['id_artikel']; ?>" data-width="750" data-numposts="5"></div>
 
 				</article>
 			</div>

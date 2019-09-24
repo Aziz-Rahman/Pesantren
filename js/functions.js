@@ -54,9 +54,28 @@ $(function(){
 
 	// Speed animate Go to Top
 	$('#scroll-top').on('click', function(){
-		$('body').animate({ scrollTop: 0 }, 1000 );
+		$('html, body').animate({ scrollTop: 0 }, 1000 );
 		return false;
 	});
+
+	// -----------------------------------------------------------------------
+    $(".btn-modal").on('click', function(){
+        var idBtnModal = $(this).attr('id');
+        var getVideoId = idBtnModal.substr(8, 11); // myModal-es8lxbExFAQ+a --> get es8lxbExFAQ
+        var idModal = idBtnModal.substr(0, 19);
+        var url = '//www.youtube.com/embed/'+getVideoId;
+       	
+		// $('.display-modal').attr("id", idModal);  
+		$("#myVideoYoutube").html('<iframe class="iframeVideo" width="570" height="325" src="'+url+'" frameborder="0" allowfullscreen></iframe>');
+    });
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $(".display-modal").on('hide.bs.modal', function(){
+        $(".iframeVideo").attr('src', '');
+        $(".iframeVideo").remove();
+    });
+	// -----------------------------------------------------------------------
 
 	// pagination
 	// $('#data-art').jplist({				

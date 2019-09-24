@@ -13,8 +13,8 @@
 						<a href="profile" class="btn btn-success btn-lg btn-pressure btn-sensitive wow slideInRight animated" data-wow-duration="700ms" role="button">Profil Selengkapnya</a>
 					</div>
 					<div class="col-md-12 info-header">
-						<h1 class="lead">Penerimaan Santri Baru (PSB)</h1>
-						<p class="tagline">Biaya pendidikan gratis 100%. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto</p>
+						<h1 class="lead">Pendaftaran Santri Baru (PSB)</h1>
+						<p class="tagline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto</p>
 						<a href="procedure" class="btn btn-success btn-lg btn-pressure btn-sensitive" role="button">Prosedur Pendaftaran</a>
 					</div>
 				</div>
@@ -69,7 +69,7 @@
 			<div class="row">
 
 				<div class="text-sec-title text-center mb40">
-					<h2 class="feature-title text-center">Penerimaan Santri Baru ( PSB )</h2>
+					<h2 class="feature-title text-center">Pendaftaran Santri Baru ( PSB )</h2>
 					<div class="devider"><i class="fa fa-flash fa-lg"></i></div>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-2">

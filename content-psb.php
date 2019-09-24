@@ -137,13 +137,13 @@ include "includes/breadcrumb.php";
 									</div>
 								</div>
 
-								<legend class="top-margin-50">Akun Santri</legend>
+								<!-- <legend class="top-margin-50">Akun Santri</legend>
 								<div class="form-group">
 									<label class="col-sm-3 control-label" for="textinput">Username <span class="text-danger">*</span></label>
 									<div class="col-sm-9">
 										<input type="text" name="username" class="form-control">
 									</div>
-								</div>
+								</div> -->
 
 								<div class="form-group">
 									<label class="col-sm-3 control-label" for="textinput">Password <span class="text-danger">*</span></label>
@@ -183,9 +183,9 @@ include "includes/breadcrumb.php";
 		    	</div><!-- /.col-md -->
 
 				
-				 <div class="col-md-5">
+				 <!-- <div class="col-md-5"> -->
 				 	<!-- START: LOGIN AREA -->
-				 	<div class="login-santri">
+				 	<!-- <div class="login-santri">
 				 		<header class="page-header login-title">
 							<h2 class="page-title">Login Ruang Santri</h2>
 						</header>
@@ -210,9 +210,9 @@ include "includes/breadcrumb.php";
 								</div>
 							</div>
 						</form>
-					</div>
+					</div> -->
 					<!-- END: LOGIN AREA -->
-				</div>
+				<!-- </div> -->
 
 				<div class="col-md-5">
 				 	<!-- START: INFO PSB -->

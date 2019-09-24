@@ -10,6 +10,7 @@
 		</div>
 		<div class="navbar-collapse collapse my-nav">
 			<ul class="nav navbar-nav pull-right">
+				<li><a href="./">Home</a></li>
 				<li><a href="profile">Profil</a></li>
 				<li><a href="news">Artikel</a></li>
 				<li><a href="gallery">Galeri</a></li>
@@ -19,14 +20,14 @@
 					<ul class="dropdown-menu">
 						<li><a href="procedure">Prosedur Pendaftaran</a></li>
 						<?php if ( empty( $_SESSION['santri_id'] ) || empty( $_SESSION['user_santri'] ) ) : ?>
-							<li><a href="sign-up">Daftar</a></li>
+							<li><a href="sign-up">Form Pendaftaran</a></li>
 						<?php endif; ?>
 					</ul>
 				</li>
-				<li><a href="room-santri">Ruang Santri</a></li>
-				<?php if ( ! empty( $_SESSION['santri_id'] ) || ! empty( $_SESSION['user_santri'] ) ) : ?>
-					<li><a href="logout.php">Logout</a></li>
-				<?php endif; ?>
+				<!-- <li><a href="room-santri">Ruang Santri</a></li> -->
+				<?php // if ( ! empty( $_SESSION['santri_id'] ) || ! empty( $_SESSION['user_santri'] ) ) : ?>
+					<!-- <li><a href="logout.php">Logout</a></li> -->
+				<?php // endif; ?>
 			</ul>
 		</div><!--/.nav-collapse -->
       </div>

@@ -54,12 +54,12 @@
 					<div class="col-md-6 widget">
 						<div class="widget-body">
 							<p class="simplenav">
-								<a href="./">Home</a> | 
-								<a href="profile">About</a> |
-								<a href="news">News</a> |
-								<a href="gallery">Gallery</a> |
-								<a href="video">Videos</a> |
-								<b><a href="sign-up">Sign up</a></b>
+								<a href="./">Beranda</a> | 
+								<a href="profile">profil</a> |
+								<a href="news">Artikel</a> |
+								<a href="gallery">Galeri</a> |
+								<a href="video">Video</a> |
+								<b><a href="procedure">Pendaftaran</a></b>
 							</p>
 						</div>
 					</div>

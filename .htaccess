@@ -1,0 +1,11 @@
+RewriteEngine on
+Options All -Indexes
+RewriteRule ^profile/?$ ?page=profile [L]
+RewriteRule ^news/?$ ?page=article [L]
+RewriteRule ^news-detail/([0-9]+)/(.*)/?$ ?page=detail-article&id_artikel=$1 [L]
+RewriteRule ^gallery/?$ ?page=gallery [L]
+RewriteRule ^video/?$ ?page=video [L]
+RewriteRule ^procedure/?$ ?page=procedure [L]
+RewriteRule ^sign-up/?$ ?page=pendaftaran [L]
+RewriteRule ^room-santri/?$ ?page=ruang-santri [L]
+RewriteRule ^search/?$ ?page=search-results [L]

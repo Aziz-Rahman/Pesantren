@@ -17,20 +17,20 @@ if ( isset( $_POST['register_santri'] ) ) :
 	$mother = anti_injection( $_POST['mother'] );
 	$phone = anti_injection( $_POST['phone'] );
 	$email = anti_injection( $_POST['email'] );
-	$username = anti_injection( $_POST['username'] );
-	$pw = anti_injection( $_POST['password'] );
+	// $username = anti_injection( $_POST['username'] );
+	// $pw = anti_injection( $_POST['password'] );
 
 	// hash_pswd
 	// $algo = PASSWORD_DEFAULT;
-	$salt = 'arh8hjd3je8r8a7lk30fd930vks2jvn69kjsh5n2';
-	$cost = 10;
+	// $salt = 'arh8hjd3je8r8a7lk30fd930vks2jvn69kjsh5n2';
+	// $cost = 10;
 
-	$options = array();
-	if ( !empty($cost) ) $options['cost'] = (int)$cost;
-	if ( !empty($salt) ) $options['salt'] = $salt;
+	// $options = array();
+	// if ( !empty($cost) ) $options['cost'] = (int)$cost;
+	// if ( !empty($salt) ) $options['salt'] = $salt;
 
 	// $hash   = password_hash($pass, $algo);
-	$password = password_hash( $pw, PASSWORD_DEFAULT, $options ); // pswd an insert after ( validation without hash )
+	// $password = password_hash( $pw, PASSWORD_DEFAULT, $options ); // pswd an insert after ( validation without hash )
 
 	// Photo
 	$pure_photo =  $_FILES['photo']['name'];
@@ -83,7 +83,7 @@ if ( isset( $_POST['register_santri'] ) ) :
 	$kd =  $year . $mount . random_number(6);
 
 
-	if ( empty( $full_name ) || empty( $city_brithday ) || empty( $brithday ) || empty( $gender ) || empty( $status_kawin ) || empty( $address ) || empty( $pos ) || empty( $city ) || empty( $father ) || empty( $mother ) || empty( $phone ) || empty( $email ) || empty( $username ) || empty( $pw ) ) {
+	if ( empty( $full_name ) || empty( $city_brithday ) || empty( $brithday ) || empty( $gender ) || empty( $status_kawin ) || empty( $address ) || empty( $pos ) || empty( $city ) || empty( $father ) || empty( $mother ) || empty( $phone ) || empty( $email ) ) {
 		echo "<script>alert( 'Pengisian data harus lengkap, silahkan ulangi.' );
 			document.location.href='./?page=pendaftaran';</script>";
 	}
@@ -119,24 +119,24 @@ if ( isset( $_POST['register_santri'] ) ) :
 		echo "<script>alert( 'Nama kota tidak valid, silahkan ulangi.' );
 			document.location.href='./?page=pendaftaran';</script>";
 	}
-	elseif ( !preg_match( "/^[a-zA-Z0-9]*$/",$username ) ) {
-		echo "<script>alert( 'Username hanya boleh diisi dengan karakter huruf atau angka dan tidak mengandung spasi, silahkan ulangi' );
-			document.location.href='./?page=pendaftaran';</script>";
-	}
-	elseif ( strlen( $username ) < 6 ) {
-		echo "<script>alert( 'Panjang karakter username minimal 6 karakter, silahkan ulangi.' );
-			document.location.href='./?page=pendaftaran';</script>";
-	}
-	elseif ( strlen( $pw ) < 8 ) {
-		echo "<script>alert( 'Panjang karakter password minimal 8 karakter, silahkan ulangi.' );
-			document.location.href='./?page=pendaftaran';</script>";
-	} 
+	// elseif ( !preg_match( "/^[a-zA-Z0-9]*$/",$username ) ) {
+	// 	echo "<script>alert( 'Username hanya boleh diisi dengan karakter huruf atau angka dan tidak mengandung spasi, silahkan ulangi' );
+	// 		document.location.href='./?page=pendaftaran';</script>";
+	// }
+	// elseif ( strlen( $username ) < 6 ) {
+	// 	echo "<script>alert( 'Panjang karakter username minimal 6 karakter, silahkan ulangi.' );
+	// 		document.location.href='./?page=pendaftaran';</script>";
+	// }
+	// elseif ( strlen( $pw ) < 8 ) {
+	// 	echo "<script>alert( 'Panjang karakter password minimal 8 karakter, silahkan ulangi.' );
+	// 		document.location.href='./?page=pendaftaran';</script>";
+	// } 
 
 	else {
 
 		// PROCESS INSERT TO DB
-		$save = $conn->query( "INSERT INTO pendaftaran ( no_pendaftaran, nama_lengkap, tmpt_lahir, tgl_lahir, jekel, status_kawin, alamat, kd_pos, kota, pend_terakhir, nama_ayah, nama_ibu, no_telp, email, foto, ijazah, ktp, username, password, status_pendaftaran ) 
-										VALUES( '$kd', '$full_name', '$city_brithday', '$brithday', '$gender', '$status_kawin', '$address', '$pos', '$city', '$study', '$father', '$mother', '$phone', '$email', '$photo', '$ijazah', '$ktp', '$username', '$password', 'proses' )" );
+		$save = $conn->query( "INSERT INTO pendaftaran ( no_pendaftaran, nama_lengkap, tmpt_lahir, tgl_lahir, jekel, status_kawin, alamat, kd_pos, kota, pend_terakhir, nama_ayah, nama_ibu, no_telp, email, foto, ijazah, ktp, status_pendaftaran ) 
+										VALUES( '$kd', '$full_name', '$city_brithday', '$brithday', '$gender', '$status_kawin', '$address', '$pos', '$city', '$study', '$father', '$mother', '$phone', '$email', '$photo', '$ijazah', '$ktp', 'proses' )" );
 
 		if ( $save ) {
 			move_uploaded_file( $_FILES['photo']['tmp_name'], $path_photo );
