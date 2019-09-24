@@ -7,9 +7,9 @@ Tujuan sistem ini dibuat adalah untuk mempermudah masyarakat agal lebih mengenal
 # Fitur
 - Article
 - Gallery
-- List Video (sedang dikembangkan dengan menarik api dari youtube)
+- List Video (Dari api youtube)
 - PSB/Pendaftaran Santri Baru (On progress)
-- Ruang Santri ->yaitu sebagai wadah informasi yg disediakan khusus untuk para santri (On progress)
+- Admin (On progress 60%)
 
 # Halaman Homepage
 ![alt text](https://github.com/Aziz-Rahman/pesantren/blob/master/Pesantren%20Nur%20Al-Tauhid11.png)
