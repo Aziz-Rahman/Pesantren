@@ -41,7 +41,7 @@ include "includes/breadcrumb.php";
 					
 				<div id="my-video">
 					<?php 
-					$api_key = 'AIzaSyBLtj6p6S6nNwHlyI_tHEisj1qC9KSy5mk';
+					$api_key = 'RAHASIA !';
 					$playlist_id = 'PLJRWDZaS477Oii7RXZj0uUHCUN_7VDK35'; 
 					$result = 24;
 					$api_url = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults='. $result .'&playlistId='. $playlist_id . '&key=' . $api_key;
